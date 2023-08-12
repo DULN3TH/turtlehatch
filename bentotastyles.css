@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.ben-foot{
+    
+    width: 100%;
+}
+
+.ham-nav{
+    display: none;
+}
+.ham-nav span img{
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.ham-nav input[type= "checkbox"]{
+    height: 40px;
+    width: 40px;
+    z-index: 999;
+    opacity: 0;
+}
+.ham-nav input[type= "checkbox"]:checked + ul{
+    display: block;
+}
+.ham-nav ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+}
+.ham-nav ul li{
+    padding: 5px 10px;
+}
+
+footer{
+    /* position: absolute; */
+    background: linear-gradient(270deg, #00ff87, #60efff);
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    bottom: 0;
+    position: relative;
+}
+
+
+.foot1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.foot1 img{
+    position: absolute;
+    width: 300px;
+    margin-left: 70vw;
+    margin-top: 10vh;
+}
+
+.foot1 button{
+    padding: 10px;
+    background-color: yellow;
+    border-color: yellow;
+    font-family: 'Anton', sans-serif;
+    width: 150px;
+    cursor: pointer;
+    margin: 2vh;
+    box-shadow: 0 0 30px 10px rgb(248, 248, 60);
+}
+
+.foot1 h3 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.foot1 .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+    color: black;
+}
+
+.foot1 .social a{
+    text-decoration: none;
+    color: #000;
+}
+
+.foot1 .social .fa-facebook:hover{
+    color: #3b5998;
+}
+
+.foot1 .social .fa-twitter:hover{
+    color: #00acee;
+}
+
+.foot1 .social .fa-google-plus:hover{
+    color: #db4a39 ;
+}
+
+.foot1 .social .fa-youtube:hover{
+    color: red;
+}
+
+.foot1 .social .fa-linkedin-square:hover{
+    color: #0A66C2;
+}
+
+.foot-btm{
+    justify-content: center;
+    text-align: center;
+}
+
+/* home */
+.logo{
+    width: 190px;
+    height: auto;
+    margin-left: -100px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.home ul li:nth-child(5):hover > .subnav{
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.subnav{
+    opacity: 0;
+    position: absolute;
+    margin-left: 45vw;
+    padding: 20px;
+    display: block;
+    height: 100px;
+}
+.home ul li {
+    display: inline;
+    padding: 20px;   
+}
+
+.home li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+    
+}
+
+.home li a:hover {
+    font-size: 16px;
+    font-weight: 800;
+    
+}
+.ham-nav{
+    display: none;
+}
+.ham-nav span img{
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.ham-nav input[type= "checkbox"]{
+    height: 40px;
+    width: 40px;/* 
+    position: absolute; */
+    z-index: 999;
+    opacity: 0;
+}
+.ham-nav input[type= "checkbox"]:checked + ul{
+    display: block;
+}
+.ham-nav ul{
+    display: none;
+}
+
+/* Bentota style */
+
+.bbody{
+    /* background-image: url(../images/bentotabg.jpg); */
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.ben{
+    background-image: url(../images/bentotabg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.ben h1{
+    font-size: 130px;
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+}
+
+.ben h4{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+}
+
+.ben p{
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    padding: 20px 10px 10px 10px;
+}
+
+.ben #sct{
+    background-color: #8a8888;
+    width: 450px;
+    /* margin-top: 13vh;
+    margin-left: 31vw; */
+    opacity: 0.7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    padding-top: 20px;
+}
+.ben .but1{
+    background-color: transparent;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ben .but1:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+.ben .but2{
+    background-color: transparent;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ben .but2:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+
+.explore {
+    display: flex;
+    background-image: url(../images/bentotaabt.jpg);
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+}
+
+    
+.explore p{
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#xplo{
+    margin-top: 100vh;
+    position: absolute;
+}
+#xplor{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore .but3{
+    padding: 15px;
+    border: transparent;
+    border-radius: 360px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.explore .but3:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 10px 10px rgb(0, 0, 0,.5);
+}
+/* .wwd {
+    background-image:url(../images/grad2.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    margin-top: 198vh;
+} */
+
+
+
+.wwd{
+    background-image: url(../images/grad2.png);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.wwd-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.wwd h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 60px;
+    color: #fff;
+    text-align: right;
+}
+
+.wwd p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    width: 30vw;
+    text-align: right;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.wwd img{
+    border-radius: 10px;
+    height: 80vh;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.wwd button{
+    padding: 15px;
+    background-image: linear-gradient(270deg, #07f49e, #0974f1 70%);
+    border: transparent;
+    border-radius: 25px;
+    width: 140px;
+    color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.wwd button:hover{
+    background-color: #45E0C3;
+    cursor: pointer;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    background-image: linear-gradient(270deg, #0974f1, #07f49e 70%);
+    color: black;
+}
+
+@media (max-width: 450px){
+    .ham-nav{
+        display: block;
+    }
+    .footer{
+        width: auto;
+    }
+    .foot1 img{
+        width: 100px;
+    }
+
+    .home{
+        visibility: hidden;
+    }
+    .bbody{
+        object-fit: cover;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .ben h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .ben h4{
+        font-size: 35px;
+        text-align: center;
+    }
+    .ben p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .ben #sct{
+        width: 45vw;
+    }
+    .ben .but1{
+        
+        padding: 5px;
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    .ben .but2{
+        padding: 5px;
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    .explore{
+        height: fit-content;
+        padding: 20px 0;
+    }
+    .explore p{
+        font-size: 10px;
+    }
+    #xplor{
+        height: fit-content;
+    }
+    
+    .explore .but3{
+        padding: 5px;
+        font-size: 5px;
+    }
+    .wwd img{
+        height: 50vh;
+    }
+    .wwd p{
+        /* margin-top: 100vh; */
+        font-size: 10px;
+        width: 40vw;
+    }
+    .wwd button{
+        padding: 5px;
+        /* margin-top: 120vh; */
+        font-size: 10px;
+        width: 70px;
+    }
+    
+}
