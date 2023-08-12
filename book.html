@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <section class="book">
+        <h1>Buy Tickets</h1>
+        <ul>
+            <li><a href="hikkaduwaturtle.html">Hikkaduwa</a></li>
+            <li><a href="book.html">Tickets</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="confirm.html">Confirmation</a></li>
+        </ul>
+    </section>
+
+    <section class="calendar">
+        <table id="cal">
+
+            <div class="calendarHead">
+                <button id="prev"><img src="images/categories/left-arrow-alt-regular-24.png" alt=""></button>
+                <header id="MonthNow"></header>
+                <button id="next"><img src="images/categories/right-arrow-alt-regular-24.png" alt=""></button>
+            </div>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+
+            </tr>
+        </table>
+        <span id="selectedDate"></span>
+    </section>
+
+    <div class="slot">
+        <div class="tm1">
+            <button onclick="handleClick(event)" id="normal"><input type="radio">07.00 am- 08.00 am </button>
+            <button onclick="handleClick(event)" id="normal"><input type="radio">08.00 am- 09.00 am </button>
+        </div>
+        <div class="tm2">
+            <button onclick="handleClick(event)" id="normal"><input type="radio">09.00 am- 10.00 am </button>
+            <button onclick="handleClick(event)" id="peak"><input type="radio">10.00 am- 11.00 am </button>
+        </div>
+        <div class="tm3">
+            <button onclick="handleClick(event)" id="peak"><input type="radio">11.00 am- 12.00 pm </button>
+            <button onclick="handleClick(event)" id="peak"><input type="radio">12.00 pm- 01.00pm </button>
+        </div>
+        <div class="tm4">
+            <button onclick="handleClick(event)" id="normal"><input type="radio" id="normal">01.00 pm- 02.00 pm
+            </button>
+            <button onclick="handleClick(event)" id="normal"><input type="radio" id="normal">02.00 pm- 03.00 pm
+            </button>
+        </div>
+        <div class="tm5">
+            <button onclick="handleClick(event)" id="peak"><input type="radio">03.00 pm- 04.00 pm </button>
+            <button onclick="handleClick(event)" id="peak"><input type="radio">04.00 pm- 05.00 pm </button>
+            <button onclick="handleClick(event)" id="peak"><input type="radio">05.00 pm- 06.00 pm </button>
+            <h6>*Note: Buttons marked with red are peak hours and will cost higher than normal hours</h6><br>
+        </div>
+    </div>
+
+    <section class="guests" id="guestNum">
+
+        <div id="ad">
+            <div class="age">
+                <h4>SL Adult</h4>
+                <h6>Above 18 yrs</h6>
+            </div>
+            <div class="buttons">
+                <button id="aminus"><img id="minus" src="images/minus-regular-24.png"></button>
+                <h5 id="anum"></h5>
+                <button id="aplus"><img id="plus" src="images/plus-regular-24.png"></button>
+            </div>
+        </div>
+
+        <div id="fad">
+            <div class="age">
+                <h4>Foreign Adult</h4>
+                <h6>Above 18 yrs</h6>
+            </div>
+            <div class="buttons">
+                <button id="faminus"><img id="minus" src="images/minus-regular-24.png"></button>
+                <h5 id="fanum"></h5>
+                <button id="faplus"><img id="plus" src="images/plus-regular-24.png"></button>
+            </div>
+        </div>
+
+
+        <div id="ch">
+            <div class="age">
+                <h4>SL Child</h4>
+                <h6>5-14 yrs</h6>
+            </div>
+            <div class="buttons">
+                <button id="cminus"><img id="minus" src="images/minus-regular-24.png"></button>
+                <h5 id="cnum"></h5>
+                <button id="cplus"><img id="plus" src="images/plus-regular-24.png"></button>
+            </div>
+        </div>
+        <div id="fch">
+            <div class="age">
+                <h4>Foreign Child</h4>
+                <h6>5-14 yrs</h6>
+            </div>
+            <div class="buttons">
+                <button id="fcminus"><img id="minus" src="images/minus-regular-24.png"></button>
+                <h5 id="fcnum"></h5>
+                <button id="fcplus"><img id="plus" src="images/plus-regular-24.png"></button>
+            </div>
+        </div>
+
+        <div id="in">
+            <div class="age">
+                <h4>SL Infant</h4>
+                <h6>Under 4 years</h6>
+            </div>
+            <div class="buttons">
+                <button id="iminus"><img id="minus" src="images/minus-regular-24.png"></button>
+                <h5 id="inum"></h5>
+                <button id="iplus"><img id="plus" src="images/plus-regular-24.png"></button>
+            </div>
+        </div>
+        <div id="fin">
+            <div class="age">
+                <h4>Foreign Infant</h4>
+                <h6>Under 4 years</h6>
+            </div>
+            <div class="buttons">
+                <button id="fiminus"><img id="minus" src="images/minus-regular-24.png"></button>
+                <h5 id="finum"></h5>
+                <button id="fiplus"><img id="plus" src="images/plus-regular-24.png"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="time">
+
+
+        <div class="fees">
+            <table>
+                <th></th>
+                <th>Normal</th>
+                <th>Peak</th>
+                <tr>
+                    <td>Foreign Adult</td>
+                    <td>10 USD</td>
+                    <td>13 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Adult</td>
+                    <td>4 USD</td>
+                    <td>6 USD</td>
+                </tr>
+                <tr>
+                    <td>Foreign Child</td>
+                    <td>5 USD</td>
+                    <td>8 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Child</td>
+                    <td>2 USD</td>
+                    <td>3 USD</td>
+                </tr>
+                <tr>
+                    <td>Infants</td>
+                    <td>FREE</td>
+                    <td>FREE</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </section>
+
+    <section class="summary">
+        <table>
+            <tr>
+                <td colspan="3">Date</td>
+                <td colspan="3" id="date"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Time</td>
+                <td colspan="3" id="tym"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Duration</td>
+                <td colspan="3" id="duration">0</td>
+            </tr>
+
+            <tr>
+                <td colspan="6" id="tick">Tickets</td>
+            </tr>
+            <tr id="guestType">
+                <td id="gt1">SL Adult</td>
+                <td id="gt2">Foreign Adult</td>
+                <td id="gt3">SL Child</td>
+                <td id="gt4">Foreign Child</td>
+                <td id="gt5">SL Infant</td>
+                <td id="gt6">Foreign Infant</td>
+            </tr>
+
+            <tr>
+                <td colspan="6" id="char">Charges</td>
+            </tr>
+            <tr>
+                <td id="sladult">0</td>
+                <td id="foradult">0</td>
+                <td id="slchild">0</td>
+                <td id="forchild">0</td>
+                <td id="slinf">0</td>
+                <td id="forinf">0</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td colspan="3" id="total">0</td>
+            </tr>
+
+        </table>
+
+        <a href="details.html"><button id="confirm">Continue with Purchase</button></a>
+    </section>
+    <script src="booking.js"></script>
+</body>
+<!-- <script src="booking.js"></script> -->
+
+
+</html>

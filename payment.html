@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- <script defer src="./payment.js"></script> -->
+    
+</head>
+<body>
+  <div class="pay">
+    <h1>Enter Payment Details</h1>
+    <div class="book">
+    <ul>
+        <li><a href="hikkaduwaturtle.html">Hikkaduwa</a></li>
+        <li><a href="book.html">Tickets</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="confirm.html">Confirmation</a></li>
+    </ul>
+    </div>
+</div>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Payment Method</h1>
+            <div class="pay">
+                <label for="cnumber">Card Number</label>
+                <input id="cnumber" name="cname" type="number">
+                <div class="error"></div>
+            </div>
+            <div class="pay">
+                <label for="exp">Expiry Date</label>
+                <input id="exp" name="exp" type="date">
+                <div class="error"></div>
+            </div>
+            <div class="pay">
+                <label for="cvc">CVC / CVV</label>
+                <input id="cvc" name="cvc" type="number">
+                <div class="error"></div>
+            </div>
+            <div class="pay">
+                <label for="name">Name on Card</label>
+                <input id="name"name="name" type="text">
+                <div class="error"></div>
+            </div>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+    <div id="pay">
+    <a href="confirm.html"><button id="pay-btn">Pay</button></a>
+    </div>
+
+    <section class="summary">
+        <table>
+            <tr>
+                <td colspan="3">Date</td>
+                <td colspan="3" id="date"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Time</td>
+                <td colspan="3" id="tym"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Duration</td>
+                <td colspan="3" id="duration">0</td>
+            </tr>
+            
+            <tr>
+                <td colspan="6" id="tick">Tickets</td>
+            </tr>
+            <tr id="guestType">
+                <td id="gt1">SL Adult</td>
+                <td id="gt2">Foreign Adult</td>
+                <td id="gt3">SL Child</td>
+                <td id="gt4">Foreign Child</td>
+                <td id="gt5">SL Infant</td>
+                <td id="gt6">Foreign Infant</td>
+            </tr>
+
+            <tr>
+                <td colspan="6" id="char">Charges</td>
+            </tr>
+            <tr>
+                <td id="sladult">0</td>
+                <td id="foradult">0</td>
+                <td id="slchild">0</td>
+                <td id="forchild">0</td>
+                <td id="slinf">0</td>
+                <td id="forinf">0</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td colspan="3" id="total">0</td>
+            </tr>
+            
+        </table>
+
+        <a href="details.html"><button id="confirm">Continue with Purchase</button></a>
+    </section>
+    <script defer src="./payment.js"></script>
+    <script defer src="./booking.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    
+
+</body>
+</html>

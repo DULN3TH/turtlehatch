@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+    <div class="det">
+        <h1>Enter your details</h1>
+        <ul>
+            <li><a href="hikkaduwaturtle.html">Hikkaduwa</a></li>
+            <li><a href="book.html">Tickets</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="confirm.html">Confirmation</a></li>
+        </ul>
+    </div>
+
+    <section id="formSection">
+        <h1>Contact Form</h1>
+        <form id="contactForm">
+            <div>
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" >
+            <div class="error"></div>
+            </div>
+
+            <div>
+            <label for="phone">Telephone *</label>
+            <input type="tel" id="phone">
+            <div class="error"></div>
+            </div>
+    
+            <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" >
+            <div class="error"></div>
+            </div>
+    
+            <div>
+            <label for="confirmEmail">Confirm Email *</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" >
+            <div class="error"></div>
+            </div>
+    
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+    
+            <input type="submit" value="Submit">
+        </form>
+        <div class="summary">
+            <a href="payment.html"><button id="confirm" disabled>Continue with Purchase</button></a>
+        </div>
+        
+    </section>
+
+    <section class="summary">
+        <table>
+            <tr>
+                <td colspan="3">Date</td>
+                <td colspan="3" id="date"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Time</td>
+                <td colspan="3" id="tym"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Duration</td>
+                <td colspan="3" id="duration">0</td>
+            </tr>
+            
+            <tr>
+                <td colspan="6" id="tick">Tickets</td>
+            </tr>
+            <tr id="guestType">
+                <td id="gt1">SL Adult</td>
+                <td id="gt2">Foreign Adult</td>
+                <td id="gt3">SL Child</td>
+                <td id="gt4">Foreign Child</td>
+                <td id="gt5">SL Infant</td>
+                <td id="gt6">Foreign Infant</td>
+            </tr>
+
+            <tr>
+                <td colspan="6" id="char">Charges</td>
+            </tr>
+            <tr>
+                <td id="sladult">0</td>
+                <td id="foradult">0</td>
+                <td id="slchild">0</td>
+                <td id="forchild">0</td>
+                <td id="slinf">0</td>
+                <td id="forinf">0</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td colspan="3" id="total">0</td>
+            </tr>
+            
+        </table>
+
+        
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="./payment.js"></script>
+    <script src="./booking.js"></script>
+</body>
+</html>
+
+
